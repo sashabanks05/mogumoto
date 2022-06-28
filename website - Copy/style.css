@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lora:ital@1&family=Montserrat:wght@500&family=Noto+Sans+KR:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+/* header */
+
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+#header nav.top {
+    background-color: #FCFCFF;
+    color: white;
+    height: 25px;
+    width: 100%;
+    font-family: Lora, sans-serif;
+    text-align: center;
+    line-height: 25px;
+}
+
+nav {
+    background-color: black;
+    height: 60px;
+    max-width: 100%;
+}
+
+label.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 60px;
+    padding-left: 113px;
+    padding-right: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Courgette, sans-serif;
+    transition: .5s ease;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+label.logo span {
+    color: #F3C969;
+}
+
+label.logo:hover {
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 113px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Courgette, sans-serif;
+    transition: .7s ease;
+    background-color: black;
+}
+
+nav ul {
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+    transition: .2s ease background-color;
+    transition-property: background-color, color;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: #F3C969;
+}
+
+/* end of header */
+
+/* homepage */
+
+#homepage {
+    background-image: url("./img/cloy.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homepage::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, black);
+    opacity: 1;
+    z-index: -1;
+}
+
+#homepage .homepage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#homepage h1 {
+    display: block;
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 50px;
+    position: relative;
+    color: white;
+}
+
+#homepage .cta {
+    display: inline-block;
+    padding: 10px 40px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #F3C969;
+    font-size: 20px;
+    margin-top: 600px;
+    transition: .5s ease background-color;
+    transition-property: background-color, color;
+}
+
+#homepage p {
+    color: white;
+    font-style: italic;
+}
+
+#homepage .cta:hover {
+    color: black;
+    background-color: #F3C969;
+    border: 2px solid black;
+}
+
+/* end of homepage */
+
+/* footer */
+
+#footer {
+    background-color: black;
+}
+
+#footer .footer {
+    min-height: 180px;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+#footer h1 {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    padding: 0 30px;
+    font-family: Courgette, sans-serif;
+    transition: 1s ease;
+    border-radius: 10px;
+}
+
+#footer .brand h1:hover {
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: Courgette, sans-serif;
+    background-color: white;
+    border-radius: 10px;
+}
+
+div.brand span {
+    color: #F3C969;
+}
+
+#footer h2 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer p {
+    color: white;
+}
+
+#footer p .yellow {
+    color: #F3C969;
+}
+
+#footer p .footspa {
+    font-family: Courgette, sans-serif;
+}
+
+/* end of footer */
+
+/* watching */
+
+.watching {
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+#watching {
+    background-image: url("./img/yumi.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#watching h1 {
+    display: block;
+    width: fit-content;
+    font-size: 30px;
+    position: relative;
+    color: white;
+    margin-top: 600px;
+    font-weight: 200;
+}
+
+.watch {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.watch h1 span {
+    color: white;
+    font-weight: bold;
+}
+
+#watching .conwatch {
+    display: inline-block;
+    padding: 10px 40px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #F3C969;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: .5s ease background-color;
+    transition-property: background-color, color;
+}
+
+#watching .conwatch:hover {
+    color: black;
+    background-color: #F3C969;
+    border: 2px solid black;
+}
+
+#watching::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, black);
+    opacity: .9;
+    z-index: -1;
+}
+
+/* end of watching */
+
+/* continue */
+
+.continue {
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+#continue {
+    background-image: url("./img/counter.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#continue h2 {
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 600px;
+}
+
+#continue h3 {
+    display: inline;
+    width: fit-content;
+    font-size: 30px;
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+
+.cont {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#continue .cloy {
+    display: block;
+    color: white;
+    background-color: transparent;
+    font-size: 40px;
+    transition: 1s ease;
+}
+
+#continue .cloy1 {
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    transition: .7s ease;
+    margin-top: 5px;
+    padding: 0px 10px;
+}
+
+#continue .cloy3 {
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    transition: .7s ease;
+    margin-top: 5px;
+    padding: 0px 10px;
+}
+
+#continue .cloy2 {
+    display: inline-block;
+    color: #F3C969;
+    background-color: transparent;
+    font-size: 30px;
+    transition: .7s ease;
+    padding: 0 10px;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+#continue .cloy4 {
+    display: inline-block;
+    color: #F3C969;
+    background-color: transparent;
+    font-size: 30px;
+    transition: .7s ease;
+    padding: 0 10px;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+#continue .cloy:hover {
+    font-size: 40px;
+    color: #F3C969;
+}
+
+#continue .cloy1:hover {
+    font-size: 30px;
+    color: black;
+    background-color: #F3C969;
+    text-decoration: underline;
+}
+
+#continue .cloy3:hover {
+    font-size: 30px;
+    color: black;
+    background-color: #F3C969;
+    text-decoration: underline;
+}
+
+#continue .cloy2:hover {
+    font-size: 30px;
+    color: black;
+    background-color: #F3C969;
+    text-decoration: underline;
+}
+
+#continue .cloy4:hover {
+    font-size: 30px;
+    color: black;
+    background-color: #F3C969;
+    text-decoration: underline;
+}
+
+#continue::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, black);
+    opacity: .9;
+    z-index: -1;
+}
+
+/* end of continue */
+
+/* faves */
+
+.faves {
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+#faves {
+    background-image: url("./img/fond.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#faves h2 {
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 600px;
+}
+
+#faves h3 {
+    display: inline;
+    width: fit-content;
+    font-size: 30px;
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+
+.fave {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#faves .fave0 {
+    display: block;
+    color: white;
+    background-color: transparent;
+    font-size: 40px;
+    transition: 1s ease;
+}
+
+#faves .fave1 {
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    transition: .7s ease;
+    margin-top: 5px;
+    padding: 0px 10px;
+}
+
+#faves .fave3 {
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    transition: .7s ease;
+    margin-top: 5px;
+    padding: 0px 10px;
+}
+
+#faves .fave2 {
+    display: inline-block;
+    color: #F3C969;
+    background-color: transparent;
+    font-size: 30px;
+    transition: .7s ease;
+    padding: 0 10px;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+#faves .fave4 {
+    display: inline-block;
+    color: #F3C969;
+    background-color: transparent;
+    font-size: 30px;
+    transition: .7s ease;
+    padding: 0 10px;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+#faves .fave0:hover {
+    font-size: 40px;
+    color: #F3C969;
+}
+
+#faves .fave1:hover {
+    font-size: 30px;
+    color: black;
+    background-color: #F3C969;
+    text-decoration: underline;
+}
+
+#faves .fave3:hover {
+    font-size: 30px;
+    color: black;
+    background-color: #F3C969;
+    text-decoration: underline;
+}
+
+#faves .fave2:hover {
+    font-size: 30px;
+    color: black;
+    background-color: #F3C969;
+    text-decoration: underline;
+}
+
+#faves .fave4:hover {
+    font-size: 30px;
+    color: black;
+    background-color: #F3C969;
+    text-decoration: underline;
+}
+
+#faves::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, black);
+    opacity: 1;
+    z-index: -1;
+}
+
+/* end of faves */
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+::-webkit-scrollbar-track {
+    background: #050914; 
+  }
+::-webkit-scrollbar-thumb {
+    background: #F3C969; 
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #c49831; 
+  }
+
+  /* End of SCROLLBAR */
